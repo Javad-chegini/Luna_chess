@@ -35,8 +35,8 @@ const transpositionTable = new Map();
 const killerMoves = Array(20).fill(null).map(() => [null, null]);
 const historyTable = {};
 let nodesSearched = 0;
-const moveSound = new Audio('./SOUND/817547__silverdubloons__pickupcard01.wav');
-const checkSound = new Audio('./SOUND/176238__melissapons__sci-fi_short_error.wav');
+const moveSound = new Audio('../SOUND/817547__silverdubloons__pickupcard01.wav');
+const checkSound = new Audio('../SOUND/176238__melissapons__sci-fi_short_error.wav');
 let soundEnabled = true;
 function toggleSound() {
     soundEnabled = !soundEnabled;
@@ -1587,3 +1587,4 @@ document.head.appendChild(style);
 initBoard();
 
 document.getElementById('sound-toggle').addEventListener('click', toggleSound);
+
